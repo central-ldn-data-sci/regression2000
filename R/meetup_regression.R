@@ -21,6 +21,8 @@ test_score <- rep(0,polys-1)
 test_rsq <- rep(0,polys-1)
 train_rsq <- rep(0,polys-1)
 
+rsq <- function (x, y) cor(x, y) ^ 2
+
 # No regularisation
 
 for(i in 1:(polys-1)){
